@@ -24,3 +24,5 @@ in esso contenuta,  stampa il numero di documents e, acquisendo il contenuto del
 
 Un buon punto di partenza è il seguente:
 https://www.pavanpkulkarni.com/blog/16-spark-mongo-data-processing/
+
+Attenzione: è stato implementato il workaround necessario per poter scrivere Parquet file su Windows, vedi: https://stackoverflow.com/questions/40764807/null-entry-in-command-string-exception-in-saveastextfile-on-pyspark
