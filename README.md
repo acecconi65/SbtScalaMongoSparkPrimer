@@ -7,7 +7,7 @@ e disponibili su WSL 2 Ubuntu.
 Fare riferimento al seguente link:
 https://docs.mongodb.com/spark-connector/master/
 che consente di utilizzare il connettore all’interno del progetto IntelliJ semplicemente creando le seguenti dependency nel file build.sbt:
-
+```
 name := "SbtScalaMongoSparkPrimer"
 version := "0.1"
 scalaVersion := "2.11.11"
@@ -18,7 +18,7 @@ libraryDependencies ++= Seq(
 )
 libraryDependencies ++= Seq( "org.apache.spark" % "spark-core_2.11" % "2.1.0")
 libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "2.9.0"
-
+```
 **Step 2: Esempio di applicazione Scala Spark che accede a tutti i db MongoDB su localhost (processo mongod su WSL 2 Ubuntu) e, per ciascun db e per ciascuna collection 
 in esso contenuta,  stampa il numero di documents e, acquisendo il contenuto della collection su DataFrame, ne esporta i dati su file Parquet su path locale configurabile.
 
